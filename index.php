@@ -1,6 +1,7 @@
 <form method="get">
 <input type="text" name="searchname">
 <input type="number" name="limit">
+<input type="submit" value="Kereses" name="action">
 </form>
 
 
@@ -58,7 +59,7 @@ if (isset($_GET["searchname"])) {
 }
 
 $limit = "";
-if (isset($_GET["limit"])) {
+if (isset($_GET["limit"])&& is_numeric($_GET["limit"])) {
     $limit = " LIMIT " . $_GET["limit"];
 }
     
@@ -117,7 +118,8 @@ if (isset($_GET["action"])) {
 }
 
 $sql = "SELECT * FROM karakterek " . $searchsql .  $orderBy . $limit;
-//var_dump ($sql);
+
+var_dump ($sql);
 
 $result = $conn->query($sql);
 
