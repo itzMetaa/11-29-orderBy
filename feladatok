@@ -1,0 +1,11 @@
+
+
+Gyakorló feladatok:
+1) Tetszőleges adatbázisban keresés (adatbázisban min 1 szöveg, min 1 számérték): 
+    a) pontos egyezés keresése szövegben.
+    b) részleges egyezés keresése szövegben.
+2) Új keresőfeltétel, egy szám nagyobb mint a számérték opcióra 
+3) Új keresőfeltétel: csak az első x sort jelenítsük meg (x egy keresés) 
+4) Új keresőfeltétel: csak az x-edik elemtől jelenítsük meg (x egy keresés) (SQL LIMIT)
+5) Az actionből az ORDER BY ne 6 if ből jöjjön, hanem számitsuk ki a mezőt, és az irányt , és ifek és switch nélkül rakjuk össze belőle az ORDER BY tagot.
+ 
